@@ -1,0 +1,46 @@
+
+C:\Users\admin\Desktop\MissingChildDetectionSystem>git init
+Reinitialized existing Git repository in C:/Users/admin/Desktop/MissingChildDetectionSystem/.git/
+
+C:\Users\admin\Desktop\MissingChildDetectionSystem>git config --global user.name "pernimythri"
+
+C:\Users\admin\Desktop\MissingChildDetectionSystem>git config --global user.email "pernimythri2005@gmail.com"
+
+C:\Users\admin\Desktop\MissingChildDetectionSystem>git add .
+
+C:\Users\admin\Desktop\MissingChildDetectionSystem>git status
+On branch main
+All conflicts fixed but you are still merging.
+  (use "git commit" to conclude merge)
+
+Changes to be committed:
+        new file:   About The Project
+
+
+C:\Users\admin\Desktop\MissingChildDetectionSystem>git commit -m "Initial commit: Missing Child Detection System"
+[main 96f55b1] Initial commit: Missing Child Detection System
+
+C:\Users\admin\Desktop\MissingChildDetectionSystem>https://github.com/pernimythri/MissingChildDetectionSystem.git
+'https:' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\admin\Desktop\MissingChildDetectionSystem>git remote add origin https://github.com/pernimythri/MissingChildDetectionSystem.git
+error: remote origin already exists.
+
+C:\Users\admin\Desktop\MissingChildDetectionSystem>git commit
+On branch main
+nothing to commit, working tree clean
+
+C:\Users\admin\Desktop\MissingChildDetectionSystem>git push -u origin main
+Enumerating objects: 38, done.
+Counting objects: 100% (38/38), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (36/36), done.
+Writing objects: 100% (38/38), 337.27 KiB | 3.83 MiB/s, done.
+Total 38 (delta 2), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (2/2), done.
+To https://github.com/pernimythri/MissingChildDetectionSystem.git
+ * [new branch]      main -> main
+branch 'main' set up to track 'origin/main'.
+
+C:\Users\admin\Desktop\MissingChildDetectionSystem>
