@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Profile</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+<div class="page-container dashboard-container">
+
+    {% include "navbar.html" %}
+
+    <div>
+        <h1 class="profile">User Profile</h1>
+        <div class="user_details"> 
+            <p><b>Username      :</b> {{ user[0] }}</p>
+            <p><b>Email  :</b> {{ user[1] }}</p>
+            <p><b>Phone  :</b> {{ user[2] }}</p>
+            <p><b>Address  :</b> {{ user[3] }}</p>
+            <form action="/logout" method="get">
+                <button class="logout-btn">Logout</button>
+            </form>
+
+        </div>
+
+    </div>
+
+</div>
+
+</body>
+</html>

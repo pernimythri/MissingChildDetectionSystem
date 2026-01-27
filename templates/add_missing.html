@@ -1,0 +1,50 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Add Missing Person</title>
+        <link rel="stylesheet" href="/static/style.css">
+    </head>
+    <body>
+
+    <div class="page-container">
+
+        <!-- Logo -->
+        <img src="/static/images/logo.jpeg" class="logo">
+
+        <!-- Back -->
+        <a href="/missing" class="back">Back</a>
+
+        <div class="form-section">
+            <h1>Add Missing Person</h1>
+
+            <form id="uploadForm" method="POST" enctype="multipart/form-data">
+
+                <input type="text" name="name" placeholder="Name" required>
+
+                <input type="number" name="age" placeholder="Age" required>
+
+                <input type="text" name="last_seen" placeholder="Last Seen Location" required>
+
+                <textarea name="description" placeholder="Description" rows="3"></textarea>
+
+                <input type="file" name="photo" required>
+                <div class="progress-container">
+                    <div class="progress-bar" id="progressBar">0%</div>
+                </div>
+
+    <p id="status"></p>
+
+
+                <button type="submit">Submit</button>
+
+            </form>
+        </div>
+
+    </div>
+
+    <!-- <script src="./static/scripts/upload.js"></script> -->
+
+
+    </body>
+    </html>

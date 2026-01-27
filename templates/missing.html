@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Missing People</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+<div class="page-container dashboard-container">
+
+    {% include "navbar.html" %}
+
+    <h1 class="page-title">Missing People</h1>
+
+<div class="missing-grid">
+    {% for person in people %}
+<div class="person-card">
+    <a href="/person/{{ person[0] }}">
+        <img src="/static/uploads/{{ person[5] }}" width="150">
+    </a>
+    <p>Name: {{ person[1] }}</p>
+    <p>Age: {{ person[2] }}</p>
+    <p>Last Seen: {{ person[3] }}</p>
+    <p>{{ person[4] }}</p>
+
+    <form action="/delete/{{ person[0] }}" method="POST">
+        <button type="submit" class="delete-btn">Delete</button>
+    </form>
+</div>
+
+
+{% endfor %}
+<!-- ADD MORE -->
+<a href="/add-missing" class="add-card">
+    <div class="plus">+</div>
+    <p>Add More</p>
+</a>
+
+</div>
+</div>
+
+
+
+</body>
+</html>

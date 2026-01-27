@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Account</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+<div class="page-container">
+
+    <img src="/static/images/logo.jpeg" class="logo">
+
+    <!-- ✅ CORRECT BACK LINK -->
+    <a href="/login" class="back">Back</a>
+
+    <div class="register-form-section">
+        <h1>Create an Account</h1>
+
+        <form method="POST">
+            <label>Username :</label>
+            <input type="text" name="username" required>
+
+            <label>Password :</label>
+            <input type="password" name="password" required>
+
+            <label>Enter Gmail :</label>
+            <input type="email" name="gmail" required>
+            <label>Enter Phone Number :</label>
+            <input name="phone" placeholder="Phone">
+            <label>Enter Address :</label>
+            <input name="address" placeholder="Address">
+
+
+            <button type="submit">Create Account</button>
+        </form>
+
+    </div>
+</div>
+
+</body>
+</html>

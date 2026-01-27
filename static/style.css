@@ -1,0 +1,555 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.hero{
+    display:flex;
+    width:900px;
+    height:450px;
+    border-radius:12px;
+    overflow:hidden;
+    background: #0097A7;
+}
+
+/* LEFT SIDE */
+.left{
+    width:30;
+    background: #0a3d5d;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    overflow:hidden;
+}
+
+.left img{
+    width:100%;
+    height:100%;
+    object-fit:contain;
+}
+
+
+/* LOCATION PIN SHAPE */
+.pin{
+    width:200px;
+    height:280px;
+    background:white;
+    border-radius:100px 100px 100px 100px / 140px 140px 40px 40px;
+    position:relative;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+
+/* RIGHT SIDE CONTENT */
+.right{
+    width:70%;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    background:#0097A7;
+    text-align:center;
+    color:white;
+    padding:10px;
+}
+
+.right h1{
+    font-size:5rem;
+    font-weight:500;
+}
+
+.right p{
+    font-size:1.6rem;
+    margin: 10px 0 20px;
+}
+
+.btn{
+    padding: 12px 28px;
+    background:white;
+    color:#333;
+    font-weight:600;
+    border-radius:25px;
+    text-decoration:none;
+    font-size:1.1rem;
+    transition:0.3s;
+}
+
+.btn:hover{
+    transform:scale(1.07);
+    background:#87eaf5;
+}
+
+
+/* PAGE CENTER CONTAINER LIKE A FIXED APP WINDOW */
+body {
+    margin: 0;
+    background-color: black;             /* Outside border background */
+    height: 100vh;                       /* Full screen */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* This is the teal screen area */
+.page-container {
+    width: 800px;
+    min-height: 550px;   /* instead of fixed height */
+    background-color: #0097a7;
+    border-radius: 8px;
+    position: relative;
+    overflow-y: auto;   /* allows vertical scroll */
+    overflow-x: hidden;
+}
+
+
+/* Logo top-left */
+.logo {
+    width: 90px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+
+/* Form area center */
+.form-section h1{
+    font-size: 40px;
+    color:white;
+}
+.form-section {
+    
+    margin-top:15px;
+    position: absolute;
+    top: 50%;
+    left: 60%;
+    transform: translate(-50%, -50%);
+    width: 430px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+
+.form-section input {
+    margin-top:15px;
+    background: #eaeaea;
+    border: none;
+    padding: 14px 20px;
+    border-radius: 30px;
+    font-size: 16px;
+    outline: none;
+}
+.form-section h3 {
+    margin-top:15px;
+    text-align: left;
+    margin-left: 15px;
+    font-weight: 500;
+}
+
+
+/* Sign In Button */
+button {
+    width: 200px;
+    margin: 40px auto 0;
+    border-radius: 30px;
+    border: none;
+    padding: 12px;
+    font-size: 15px;
+    background: rgb(2, 248, 228);
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    transform: scale(1.05);
+    background: rgb(8, 100, 153);
+    color: white;
+}
+                    
+.create {
+    margin: 20px 20px 10px 30px;
+    text-align: center;
+    display: block;
+   
+    font-size: 18px;
+}
+
+/* Back Button Alignment */
+.back {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    font-size: 20px;
+    color: black;
+    text-decoration: none;
+}
+
+
+.register-form-section h1{
+    top:5px;
+    font-size: 40px;
+    color:white;
+}
+.register-form-section {
+    
+    margin-top:15px;
+    position: absolute;
+    top: 50%;
+    left: 60%;
+    transform: translate(-50%, -50%);
+    width: 430px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+
+.register-form-section input {
+    margin-top:50px;
+    background: #eaeaea;
+    border: none;
+    padding: 14px 40px;
+    border-radius: 30px;
+    font-size: 16px;
+    outline: none;
+}
+.form-section h3 {
+    margin-top:15px;
+    text-align: left;
+    margin-left: 15px;
+    font-weight: 500;
+}
+
+/* ================= DASHBOARD (BOX MODE) ================= */
+
+.dashboard-container {
+    background-color: #1ea6a8;
+    overflow: hidden;
+}
+
+/* NAVBAR INSIDE BOX */
+.navbar {
+    height: 75px;
+    background: #7de6f5;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.nav-logo {
+    height: 75px;
+    left:0%;
+    top:0%;
+    width: 50px;
+    position: absolute;
+    
+}
+
+.nav-links {
+    margin:60px;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 70px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+/* BODY AREA */
+.dashboard-body {
+    height: 400px; /* page-container height - navbar */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* IMAGE */
+.unity img {
+    width: 220px;
+}
+
+/* TEXT */
+.text {
+    margin-left: 60px;
+    color: #b1005c;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+
+/* NAVBAR LINKS */
+.nav-links li a {
+    text-decoration: none;
+    color: black;
+}
+
+.nav-links li a:hover {
+    color: #b1005c;
+    transform:scale(1.07);
+}
+
+/* COMMON CONTENT */
+.title {
+    padding: 40px;
+    text-align: center;
+    color: Red;
+    font-size: 60px;
+   
+}
+
+.para {
+    padding: 10px;
+    text-align: center;
+    color: white;
+    font-size: 28px;
+}
+
+.profile{
+    padding: 40px;
+    text-align: center;
+    color: #b1005c;
+    font-size: 50px;
+}
+
+.user_details {
+    padding: 40px;
+    text-align: center;
+    color: white;
+    font-size: 22px;
+}
+
+.user_details p {
+    margin: 15px auto;
+    color: white;
+    width: 400px;
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+}
+
+
+/* PAGE TITLE */
+.page-title {
+    text-align: center;
+    color: white;
+    margin-top: 20px;
+}
+
+/* MISSING PEOPLE GRID */
+.missing-grid {
+    display: flex;
+    flex-wrap: wrap;        /* MAGIC LINE */
+    justify-content: center;
+    gap: 30px;
+    margin-top: 40px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+
+/* PERSON CARD */
+.person-card {
+    text-align: center;
+    color: white;
+    width: 180px;
+    overflow: hidden;      /* prevents image escape */
+}
+
+
+.person-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    display: block;
+}
+
+
+.person-card a {
+    color: white;
+    text-decoration: underline;
+}
+
+/* ADD MORE CARD */
+.add-card {
+    width: 180px;
+    height: 220px;
+    background: white;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+
+.plus {
+    font-size: 60px;
+    color: teal;
+}
+
+/* FORM PAGE */
+.form-container {
+    width: 400px;
+    padding: 30px;
+    background: white;
+    margin: auto;
+    margin-top: 100px;
+    border-radius: 10px;
+}
+
+.form-container input,
+.form-container textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+}
+
+.form-container button {
+    width: 100%;
+    padding: 10px;
+    background: teal;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+
+textarea {
+    background: #eaeaea;
+    border: none;
+    margin-top:20px;
+    padding: 10px 20px;
+    border-radius:20px;
+    font-size: 16px;
+    resize: none;
+    margin-bottom: 4px;
+}
+
+input[type="file"] {
+    background: transparent;
+    color: white;
+    padding: 10px;
+    margin-top:5px;
+    margin-bottom:0px;
+}
+.progress-container {
+    width: 100%;
+    background-color: #ddd;
+    border-radius: 20px;
+    margin-top: 10px;
+    display: none;
+}
+
+.progress-bar {
+    width: 0%;
+    height: 20px;
+    background-color: #4CAF50;
+    text-align: center;
+    line-height: 20px;
+    color: white;
+    border-radius: 20px;
+    .progress-bar {
+    transition: width 0.2s ease-in-out;
+}
+}
+
+#status {
+    margin-top:0px;
+    color: lightgreen;
+    font-weight: bold;
+}
+.help-line-title{
+    color:red;
+    text-align: center;
+}
+.help-container {
+    width: 600px;
+    margin: 40px auto;
+    background: rgba(255,255,255,0.2);
+    padding: 30px;
+    border-radius: 15px;
+    color: white;
+    text-align: center;
+}
+.help-container h2 {
+    margin-top: 20px;
+}
+.help-container ul {
+    text-align: left;
+}
+
+.logout-btn {
+    margin-top: 30px;
+    padding: 12px 30px;
+    background-color: #ff4b4b;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.logout-btn:hover {
+    background-color: #d83b3b;
+}
+
+
+/* ---------- PERSON DETAILS PAGE ---------- */
+
+.details-wrapper {
+    display: flex;
+    height:520px;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.details-card {
+    background: white;
+    padding: 10px;
+    border-radius: 20px;
+    width: 400px;
+    text-align: center;
+    box-shadow: 0px 10px 30px rgba(0,0,0,0.3);
+}
+
+.details-img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 15px;
+    border: 4px solid #1de9b6;
+    margin-bottom: 10px;
+}
+
+.details-text p {
+    font-size: 14px;
+    margin: 8px 0;
+}
+
+.uploader-box {
+    background: #f2f2f2;
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+.back-btn {
+    display: inline-block;
+    margin-top: 20px;
+    background:rgb(13, 230, 219);
+    color: black;
+    padding: 10px 25px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.back-btn:hover {
+    background:#039470;
+}

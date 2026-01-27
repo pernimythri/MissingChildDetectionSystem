@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Missing Person Details</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+<div class="page-container dashboard-container">
+
+    {% include "navbar.html" %}
+
+    <h1 class="page-title">Missing Person Details</h1>
+
+    <div class="details-wrapper">
+
+        <div class="details-card">
+
+            <img src="/static/uploads/{{ person[4] }}" class="details-img">
+
+            <div class="details-text">
+                <p><b>Name:</b> {{ person[0] }}</p>
+                <p><b>Age:</b> {{ person[1] }}</p>
+                <p><b>Last Seen:</b> {{ person[2] }}</p>
+                <p><b>Description:</b> {{ person[3] }}</p>
+            </div>
+
+            <hr>
+
+            <h2>Contact Person Who Uploaded</h2>
+            <div class="uploader-box">
+                <p><b>Name:</b> {{ uploader[0] }}</p>
+                <p><b>Email:</b> {{ uploader[1] }}</p>
+                <p><b>Phone:</b> {{ uploader[2] }}</p>
+            </div>
+
+            <a href="/missing" class="back-btn">← Back to Missing People</a>
+
+        </div>
+
+    </div>
+
+</div>
+
+</body>
+</html>
