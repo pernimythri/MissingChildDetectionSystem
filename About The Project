@@ -1,0 +1,61 @@
+# Missing Person Face Recognition System
+
+## Project Description
+The **Missing Person Face Recognition System** is an intelligent application designed to help locate missing individuals by automatically identifying their faces from a large dataset of images. Users can upload a photo, and the system checks whether the person exists in the dataset. If a match is found, it retrieves and displays the person’s details, such as their name and address.
+
+---
+
+## Key Features
+- **Automated Face Detection and Encoding**  
+  - Detects faces in uploaded images using computer vision techniques.  
+  - Converts detected faces into numerical **face encodings** for accurate comparison.
+
+- **Dataset Handling**  
+  - Works with large datasets (e.g., 20,000+ images).  
+  - Precomputes and stores face encodings for faster matching.  
+  - Supports adding new individuals dynamically.
+
+- **Face Matching**  
+  - Compares uploaded images with the dataset using face encodings.  
+  - Provides a match result with the person’s name and address if found.
+
+- **User-Friendly Workflow**  
+  - Upload an image, system checks for a match automatically.  
+  - Displays person’s details if found, otherwise shows “No match found.”
+
+- **Scalable and Efficient**  
+  - Optimized to handle thousands of images efficiently.  
+  - Uses vectorized comparison for fast face matching.
+
+---
+
+## Technologies Used
+- **Python** – Core programming language.  
+- **OpenCV** – Image processing and face detection.  
+- **face_recognition** – Robust face encoding and comparison.  
+- **Pandas** – Dataset management (name, address, image path, encoding).  
+- **Pickle / CSV** – Storing precomputed encodings and person details.
+
+---
+
+## How It Works
+1. **Dataset Preparation**  
+   - Collect images of known individuals and store them in a folder.  
+   - Encode all faces and save for fast access.
+
+2. **Uploading New Image**  
+   - User uploads a photo of a person to check.  
+   - System detects the face and computes its encoding.
+
+3. **Matching**  
+   - Compares uploaded face encoding with precomputed dataset encodings.  
+   - Finds the closest match using Euclidean distance.
+
+4. **Result**  
+   - If a match is found → Displays the person’s name and address.  
+   - If no match → Notifies that the person is not in the dataset.
+
+---
+
+## Use Case / Impact
+This system can be used by **law enforcement, NGOs, or public safety organizations** to quickly identify missing persons. By automating face recognition against a large dataset, it reduces time and effort to locate individuals and increases the chances of reuniting them with their families.
